@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop - Desafio</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/desafio.css" />
+  </head>
+  <body>
+    <nav class="barra-navegacao">
+      <img class="barra-navegacao__logotipo"
+      src="img/logotipo-reprograma.png"
+      />
+    </nav>
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Desafio Calculadora de Projetos</h1>
+    </header>
+    <main class="conteudo-principal">
+      <section class="secao secao-hora">
+        <article class="secao__conteudo">
+          <div class="secao__formulario">
+            <fieldset>
+              <legend>Qual o valor da hora do projeto?</legend>
+                <div class="valor__hora__projeto">
+                  <label for="valor-hora">Valor Hora</label>
+                  <input type="number" id="valor-hora" />
+                </div>
+            </fieldset>
+            <fieldset>
+              <div class="quantidade__horas__projeto">
+               <legend>Quantas horas tem o projeto?</legend>
+                  <label for="horas-projeto">Horas Projeto</label>
+                  <input type="number" id="horas-projeto" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="previsao__para__perdas">
+                <legend>De quanto é a previsão de perdas para esse projeto?</legend>   
+                  <label for="perdas">Estimativa de Perdas</label>
+                  <input type="number" id="perdas" />
+              </div>
+            </fieldset>
+
+            <button onclick="calcular()">Calcular Projeto</button>
+          </div>
+        </article>
+        <footer class="secao__rodape">
+          <h3 class="secao__rodape__valor">
+            <span id="resposta">R$ 0,00</span>
+          </h3>
+          <p class="secao__rodape__legenda">Valor total do Projeto</p>
+        </footer>
+      </section>
+    </main>
+        <a href="index.html">Voltar</a>
+    <script type="text/javascript" src="js/desafio.js"></script>
+  </body>
+</html>
